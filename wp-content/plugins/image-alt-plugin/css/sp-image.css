@@ -1,0 +1,79 @@
+*, *::before, *::after {
+box-sizing: border-box;
+}
+body{
+margin: 0;
+font-family:sans-serif;
+font-size: .875rem;
+font-weight: 400;
+line-height: 1.5;
+color: #212b36;
+text-align: left;
+background-color: #f4f6f8;
+}
+#myTable {
+font-family: Arial, Helvetica, sans-serif;
+border-collapse: collapse;
+width: 100%;
+}
+#myTable td, #myTable th {
+border-bottom: 2px solid #ebeef0;
+padding: 8px;
+}
+#myTable th {
+padding-top: 12px;
+padding-bottom: 12px;
+text-align: left;  
+color: black;
+}
+.badge {
+border-radius: 4px;
+text-transform: uppercase;
+padding: 4px 10px;
+font-size: 11px;
+font-weight: 700;
+line-height: 13px;
+display: inline-block;
+white-space: nowrap;
+vertical-align: baseline;
+transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.badge-muted {
+background-color: #dfe3e8 ;
+color: #a0a0a0;
+}
+.badge-table-status {
+padding-left: 0;
+padding-right: 0;
+text-align: center;
+width: 100px;
+}
+.badge-success {
+background-color: #bbe5b3;
+color: #414f3e;
+}
+.badge-table-saved {
+padding-left: 0;
+padding-right: 0;
+text-align: center;
+width: 92px;
+}
+.badge-primary {
+color: #fff;
+background-color: #5c6ac4;
+}
+img {
+vertical-align: middle;
+border-style: none;
+}
+a {
+color: #007ace;
+text-decoration: none;
+background-color: transparent;
+}
+body .images-filter {
+padding: 1.4rem 1rem 1rem;
+}
+.text-center {
+text-align: center!important;
+}

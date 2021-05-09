@@ -1,0 +1,70 @@
+Ajax call step:-
+
+1. $.post
+2. $post_data
+3. Check request at plugin file
+4. Attach Library file
+5. Handler Ajax Request and send response to User
+
+=> Insert Operation of $wpdb Object
+
+"wp_custom_plugin"
+
+there are 2 ways to insert values to db table
+
+1. $wpdb->insert(); $wpdb->insert("table_name",array("col"=>"val1","col2"=>"val2"));
+
+2. $wpdb->query();
+        $wpdb->prepare();
+
+        $wpdb->query(
+            $wpdb->prepare(
+                "MYSQL_QUERY with placeholder",val1,value2,value...
+            )
+        );
+
+        varchar type: %s,
+        varchar type: %d
+
+=> Update Operation of $wpdb Object
+
+=> Delete Operation of $wpdb Object
+
+    "wp_custom_plugin"
+
+    1.  $wpdb->update
+    2.  $wpdb->query(
+            $wpdb->prepare(
+                "",''
+            )
+        );
+
+    1.  $wpdb->delete
+    2.  $wpdb->query(
+            $wpdb->prepare()
+        );
+    
+
+// function myjscode(){
+//     ?>
+     <!-- <script type="text/javascript"> -->
+         <!-- // custom Script code here
+         var online_web = {"admin_url":"<?php// echo admin_url('admin-ajax.php') ?>"}; -->
+<!-- //     </script> -->
+    <?php
+// }
+// add_action("wp_head","myjscode");
+
+
+=> Form Data Submitted to server [ add_action("wp_ajax_{action_name}","function_name") ]
+
+steps to follow to make ajax req:
+1.  Form validation : validate()
+2.  post method of jquery, ajaxurl, action paramter is need to make complete req and also to make form 
+    submittion (jQuery)"#frmPostOtherPage").serialize())
+
+3.  add_action("wp_ajax_{custom_action_name}","function_name");
+    function function_name(){
+        return value to user;
+        wp_die();
+    }
